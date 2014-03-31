@@ -1,0 +1,63 @@
+!!! 5
+html
+    head
+        title Node.js Login
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE-edge')
+        link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+        link(href='../../public/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+        script(type='text/javascript')
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1890531-10']);
+            _gaq.push(['_setDomainName', 'braitsch.io']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+body
+
+// preset form values if we receive a userdata object //
+- user = typeof(udata) != 'undefined' ? udata : { }
+// store the restaurant name on the client side in a hidden input field //
+input(type='hidden', value= user.restname)#restname
+
+#menu-form-container
+    form( method="post", action="/uploadDish", enctype="multipart/form-data")#menu-form.form-horizontal.well.span6
+        h1
+        p#sub1.subheading Add a dish to your menu!
+        hr
+        fieldset
+            #dish-cg.control-group
+                label.control-label(for='dish-tf') Dish Name
+                .controls
+                    input#name-tf.input-xlarge(type='text', name='dish', value= user.dish)
+            #type-cg.control-group
+                label.control-label(for='dish-list') Dish Type
+                .controls
+                    select#dish-list(name='type')
+                        each type in dishes
+                            option(selected=type.name == user.type)= type.name
+            #tags-cg.control-group
+                label.control-label(for='tags-tf') Tags
+                .controls
+                    input#tags-tf.input-xlarge(type='text', name='tags', value= user.tags)
+            #allergies-cg.control-group
+                label.control-label(for='allergies-tf') Allergies
+                .controls
+                    input#allergies-tf.input-xlarge(type='text', name='allergies', value= user.allergies)
+            #pic-cg.control-group
+                label.control-label(for='pic-tf') Picture
+                .controls
+                    input(type="file", name="image")
+                    input(type="hidden", name="restname",value=user.restname)
+            .form-actions
+                button(type='submit' )#menu-form-btn2.btn.btn-warning Submit
+        
+
+// display form errors in a custom modal window //
+
+include modals/form-errors

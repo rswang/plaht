@@ -1,0 +1,43 @@
+
+extends layout
+
+block content
+    div.container(style='width:90%')#topcontainer
+        form(method = 'get', action='/')
+            button.btn.btn-default.btn-warning
+                i.icon-home.icon-white
+                | HOME
+        //- hr
+        //- table.table.table-bordered.table-striped
+        //-     thead
+        //-         tr
+        //-             //- th(style='width:40px') Restaurant Name
+        //-             th(style='width:180px') Menu Item
+        //-             th(style='width:200px') Type
+        //-             th(style='width:200px') Allergies
+        //-             th(style='width:200px') 
+                    
+                       
+        //-     tbody
+        //-     - for (var i = 0; i < menus.length; i++)
+        //-         tr
+        //-             //- td= menus[i].restname
+        //-             td= menus[i].dish
+        //-             td= menus[i].type
+        //-             td= menus[i].allergies
+        //-             td 
+        //-                 img(src= "/uploads/fullsize/" + menus[i].dish + ".jpg")
+
+        h1=menus[1].restname
+        - for (var i = 0; i < menus.length; i++)
+            div.span3.view.view-first
+                img(src="/uploads/fullsize/" + menus[i].dish + ".jpg")
+                div.mask
+                    h2=menus[i].dish
+                    P
+                        text(style='font-family="Quicksand-Regular"') Type: 
+                        =menus[i].type
+                        //- br
+                        //- br
+                        //- text(style='font-family="Quicksand-Regular"') Restaurant: 
+                        //- =menus[i].restname 

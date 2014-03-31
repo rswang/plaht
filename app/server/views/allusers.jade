@@ -1,0 +1,24 @@
+
+extends layout
+
+block content
+
+    div.container(style='margin:20px')
+        form(method='get', action='/')
+            button.btn.btn-default.btn-warning BACK
+        table.table.table-bordered.table-striped
+                thead
+                    tr
+                        th(style='width:20px')
+                        th(style='width:100px') Name
+                        th(style='width:150px') Email
+                        th(style='width:150px') Tags
+                        th(style='width:40px') Allergies
+                tbody
+                - for (var i = 0; i < usrs.length; i++)
+                    tr
+                        td= i+1
+                        td= usrs[i].name
+                        td= usrs[i].email
+                        td= usrs[i].tags
+                        td= usrs[i].allergies

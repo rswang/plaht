@@ -1,0 +1,30 @@
+
+extends layout
+
+block content
+    div.container(style='margin:20px')
+        a(href='/')
+            button.btn.btn-default.btn-warning HOME
+        a(href='/menu')
+            button.btn.btn-default.btn-warning ADD DISH
+        hr
+        table.table.table-bordered.table-striped
+            thead
+                tr
+                    //- th(style='width:40px') Restaurant Name
+                    th(style='width:180px') Menu Item
+                    th(style='width:200px') Type
+                    th(style='width:200px') Allergies
+                    th(style='width:200px') 
+                    
+                       
+            tbody
+            - for (var i = 0; i < menus.length; i++)
+                tr
+                    //- td= menus[i].restname
+                    td= menus[i].dish
+                    td= menus[i].type
+                    td= menus[i].allergies
+                    td 
+                        img(src= "/uploads/fullsize/" + menus[i].dish + ".jpg")
+                    

@@ -1,0 +1,53 @@
+!!! 5
+html
+    head
+        title Node.js Login
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE-edge')
+        link(rel='stylesheet', href='/vendor/bootstrap.min.css')
+        link(rel='stylesheet', href='/css/style.css')
+        link(href='../../public/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+        script(type='text/javascript')
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1890531-10']);
+            _gaq.push(['_setDomainName', 'braitsch.io']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+body
+
+// preset form values if we receive a userdata object //
+- user = typeof(udata) != 'undefined' ? udata : { }
+// store the userId on the client side in a hidden input field //
+input(type='hidden', value= user._id)#userId
+
+#ratings-form-container
+    form( method="post", action="/uploadrating")#ratings-form.form-horizontal.well.span6
+        h1
+        p#sub1.subheading Please give a rating for the dish you ate recently!
+        hr
+        fieldset
+            #dish-cg.control-group
+                label.control-label(for='dish-tf') Dish Name
+                .controls
+                    input#name-tf.input-xlarge(type='text', name='dish', value= user.dish)
+            #rating-cg.control-group
+                label.control-label(for='rating-tf') Rating
+                .controls
+                    input#rating-tf.slider(type='range', name='rating', min=1, max=10, value= user.rating)
+            #comments-cg.control-group
+                label.control-label(for='comments-tf') Comments
+                .controls
+                    input#comments-tf.input-xlarge(type='text', name='comments', value= user.comments)
+            hr
+            .form-actions
+                button(type='submit' )#menu-form-btn2.btn.btn-danger CANCEL
+                button(type='submit' )#menu-form-btn2.btn.btn-warning SUBMIT
+
+// display form errors in a custom modal window //
+
+include modals/form-errors

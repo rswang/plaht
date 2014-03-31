@@ -1,0 +1,36 @@
+
+extends layout
+
+block content
+
+	div.container(style='margin:80px')
+		form(method='get', action='/')
+			button.btn.btn-default.btn-warning BACK
+		table.table.table-bordered.table-striped
+				thead
+					tr
+						th(style='width:20px')
+						th(style='width:100px') Restaurant Name
+						th(style='width:150px') Address
+						th(style='width:150px') City
+						th(style='width:40px') State
+						th(style='width:60px') Zip
+						th(style='width:80px') Country
+				tbody
+				- for (var i = 0; i < accts.length; i++)
+					tr 
+						td= i+1
+						td
+							a(href="/filter/?restname=" + accts[i].restname) #{accts[i].restname}
+						td= accts[i].address
+						td= accts[i].city
+						td= accts[i].state
+						td= accts[i].zip
+						td= accts[i].country
+	div.navbar.navbar-fixed-top#index
+		div.navbar-inner
+			div.container-fluid
+			a(href='login')
+				button.btn-logout.btn.btn-warning#loginbtn RESTAURANT
+			a(href='userlogin')
+				button.btn-logout.btn.btn-warning#loginbtn USER

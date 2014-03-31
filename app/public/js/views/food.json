@@ -1,0 +1,46 @@
+{
+"TheloniousMonkfish" : [
+{ "name":"Crispy Chicken Pad Thai" , "image":"thelonious_monkfish/crispy_chicken_pad_thai.jpg" , "type":"entree" , "description":"Rice noodles with crispy chicken, egg, crushed peanuts, bean sprouts, lime + tamarind juices, coconut sugar." , "price":"11.00" , "tags":"noodles, asian" , "allergens":"poultry, egg, nuts" , "rating":"" }, 
+{ "name":"Drunken Noodles" , "image":"thelonious_monkfish/drunken_noodles.jpg" , "type":"entree" , "description":"Flat wide noodles, onions, green beans, basil leaves, hot peppers + your choice of chicken, beef, pork, tofu, or shrimp." , "price":"10.00" , "tags":"noodles, asian" , "allergens":"poultry, beef, pork, shrimp" , "rating":"" }, 
+{ "name":"Fried Ice Cream" , "image":"thelonious_monkfish/fried_ice_cream.jpg" , "type":"dessert" , "description":"Vanilla or green tea ice cream with a fried exterior." , "price":"6.95" , "tags":"ice cream" , "allergens":"dairy" , "rating":"" },
+{ "name":"Frog Prince Roll" , "image":"thelonious_monkfish/frog_prince_roll.jpg" , "type":"entree" , "description":"Salmon, mango, and tempura crunch layered with avocado and crowned with spicy snow crab and tobiko salad." , "price":"13.95" , "tags":"sushi, asian" , "allergens":"seafood" , "rating":"" }, 
+{ "name":"Mango Fried Rice" , "image":"thelonious_monkfish/mango_fried_rice.jpg" , "type":"entree" , "description":"Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries." , "price":"12.00" , "tags":"fried rice, asian" , "allergens":"poultry, shrimp, egg" , "rating":"" }, 
+{ "name":"Red Riding Hood Roll" , "image":"thelonious_monkfish/red_riding_hood_roll.jpg" , "type":"entree" , "description":"Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces." , "price":"14.95" , "tags":"sushi, asian" , "allergens":"seafood" , "rating":"" }, 
+{ "name":"Watatsumi Noodles" , "image":"thelonious_monkfish/watatsumi_noodles.jpg" , "type":"entree" , "description":"Shrimp + scallops wok-fried with udon, string beans, red and green peppers, baby corn, green peas and basil leaves in green curry paste." , "price":"13.00" , "tags":"noodles, asian" , "allergens":"shrimp" , "rating":"" }
+]
+}
+
+{
+"DumplingRoom" : [
+{ "name":"Beijing-Style Pork Dumplings" , "image":"dumpling_room/beijing_pork.jpg" , "type":"entree" , "description":"Steamed Beijing-style pork dumplings." , "price":"6.50" , "tags":"dumplings, asian" , "allergens":"pork" , "rating":"" }, 
+{ "name":"Chicken" , "image":"dumpling_room/chicken.jpg" , "type":"entree" , "description":"Dumplings steamed with chicken and cabbage." , "price":"6.50" , "tags":"dumplings, asian" , "allergens":"chicken" , "rating":"" }, 
+{ "name":"Nutella and Banana Dumplings", "image":"dumpling_room/nutella_banana_dessert.jpg" , "type":"dessert" , "description":"Pan-fried dumplings with powdered sugar and cinnamon." , "price":"5.00" , "tags":"dumplings, asian" , "allergens":"nutella" , "rating":"" },
+{ "name":"Papa Chen's Veggie Dumplings", "image":"dumpling_room/papa_chens_veggie.jpg" , "type":"entree" , "description":"Pan-fried dumplings with chives, egg, and rice noodles." , "price":"7.00" , "tags":"dumplings, asian" , "allergens":"egg" , "rating":"" },
+{ "name":"Strawberry Boba", "image":"dumpling_room/strawberry_boba_bowl.jpg" , "type":"drink" , "description":"16 oz boba bowl." , "price":"4.50" , "tags":"boba, asian" , "allergens":"dairy" , "rating":"" },
+{ "name":"Taipei-Style Pork Dumplings", "image":"dumpling_room/taipei_pork.jpg" , "type":"entree" , "description":"Pan-fried Taipei-style pork dumplings." , "price":"7.50" , "tags":"dumplings, asian" , "allergens":"pork" , "rating":"" }
+]
+}
+
+{
+"MariposaBakery" : [
+{ "name":"Grilled Chicken Sandwich" , "image":"mariposa_bakery/grilled_chicken_sandwich.jpg" , "type":"entree" , "description":"Grilled chicken sandwich with chipotle aioli, arugula & parmesan pressed." , "price":"8.75" , "tags":"sandwich" , "allergens":"chicken, dairy" , "rating":"" }, 
+{ "name":"Hot Apple Cider" , "image":"mariposa_bakery/hot_apple_cider.jpg" , "type":"drink" , "description":"Hot apple cider." , "price":"2.50" , "tags":"drinks" , "allergens":"apple" , "rating":"" }, 
+{ "name":"Pastrami Sandwich", "image":"mariposa_bakery/pastrami_sandwich.jpg" , "type":"entree" , "description":"Pastrami sandwich with coleslaw and mustard." , "price":"8.75" , "tags":"sandwich" , "allergens":"beef" , "rating":"" }
+]
+}
+
+{
+"MaxBrenner" : [
+{ "name":"Banana Split Waffle" , "image":"max_brenner/banana_split_waffle.jpg" , "type":"dessert" , "description":"Caramelized bananas, vanilla ice cream, sugar krispies, milk chocolate ganaches" , "price":"13.95" , "tags":"dessert" , "allergens":"dairy" , "rating":"" }, 
+{ "name":"Chocolate Hazelnut Milkshake" , "image":"max_brenner/chocolate_hazelnut_milkshake.jpg" , "type":"drink" , "description":"Vanilla ice cream, milk chocolate ganache, chocolate hazelnut spread, milk, and whipped cream." , "price":"7.95" , "tags":"milkshake" , "allergens":"dairy, nuts" , "rating":"" }, 
+{ "name":"Classic European Fondue for Two", "image":"max_brenner/classic_european_fondue_for_two.jpg" , "type":"dessert" , "description":"Bananas, strawberries, chocolate chunk cookies, marshmallows, and fluffy chocolate sponge cake that can be dipped in your choice of two chocolate sauces (milk, dark, or white)." , "price":"22.95" , "tags":"fondue" , "allergens":"chocolate" , "rating":"" }
+]
+}
+
+{
+"MaxBrenner" : [
+{ "name":"Banana Split Waffle" , "image":"max_brenner/banana_split_waffle.jpg" , "type":"dessert" , "description":"Caramelized bananas, vanilla ice cream, sugar krispies, milk chocolate ganaches" , "price":"13.95" , "tags":"dessert" , "allergens":"dairy" , "rating":"" }, 
+{ "name":"Chocolate Hazelnut Milkshake" , "image":"max_brenner/chocolate_hazelnut_milkshake.jpg" , "type":"drink" , "description":"Vanilla ice cream, milk chocolate ganache, chocolate hazelnut spread, milk, and whipped cream." , "price":"7.95" , "tags":"milkshake" , "allergens":"dairy, nuts" , "rating":"" }, 
+{ "name":"Classic European Fondue for Two", "image":"max_brenner/classic_european_fondue_for_two.jpg" , "type":"dessert" , "description":"Bananas, strawberries, chocolate chunk cookies, marshmallows, and fluffy chocolate sponge cake that can be dipped in your choice of two chocolate sauces (milk, dark, or white)." , "price":"22.95" , "tags":"fondue" , "allergens":"chocolate" , "rating":"" }
+]
+}

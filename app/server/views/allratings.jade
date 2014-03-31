@@ -1,0 +1,22 @@
+
+extends layout
+
+block content
+
+    div.container(style='margin:20px')
+        form(method='get', action='/')
+            button.btn.btn-default.btn-warning BACK
+        table.table.table-bordered.table-striped
+                thead
+                    tr
+                        th(style='width:20px')
+                        th(style='width:100px') Dish
+                        th(style='width:150px') Ratings
+                        th(style='width:150px') Comments
+                tbody
+                - for (var i = 0; i < rates.length; i++)
+                    tr
+                        td= i+1
+                        td= rates[i].dish
+                        td= rates[i].rating
+                        td= rates[i].comments

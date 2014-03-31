@@ -1,0 +1,152 @@
+
+extends layout
+
+block content
+    div.container(style='width:90%')#topcontainer
+        form(method = 'get', action='/')
+            button.btn.btn-default.btn-warning
+                i.icon-home.icon-white
+                | HOME
+
+        h1 Thelonius Monkfish
+        h3 524 Massachusetts Ave
+        h3 Cambridge, MA 02139
+        h3 (617) 441-2116
+        a(href="mailto:contact@theloniusmonkfish.com")
+            h3 contact@theloniusmonkfish.com
+        hr
+        h1 Appetizers
+        a(href="#padthai",data-toggle="modal")
+            div.span3.view.view-first
+                img(src="/uploads/fullsize/Crispy Chicken Pad Thai.jpg")
+                div.mask
+                    h2 Crispy Chicken Pad Thai
+                    P Rice noodles with crispy chicken, egg, crushed peanuts, bean sprouts, lime + tamarind juices, coconut sugar.
+        div.modal.hide.fade(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true", id="padthai")#padthai
+            div.modal-header
+                button.lose(type="button",data-dismiss="modal", aria-hidden="true") x
+                h3 Crispy Chicken Pad Thai
+            div.modal-body
+                div.text-center
+                    P
+                        img(src="/uploads/fullsize/Crispy Chicken Pad Thai.jpg")
+                div.text-left
+                    h2 Crispy Chicken Pad Thai
+                    P Rice noodles with crispy chicken, egg, crushed peanuts, bean sprouts, lime + tamarind juices, coconut sugar.
+                div.modal-footer
+                    button.btn(data-dismiss="modal", aria-hidden="true") Close
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Chicken.jpg")
+            div.mask
+                h2 Crispy Chicken
+                P Flat wide noodles, onions, green beans, basil leaves, hot peppers + your choice of chicken, beef, pork, tofu, or shrimp.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Beijing Pork.jpg")
+            div.mask
+                h2 Beijing Pork
+                P Pan-fried dumplings with powdered sugar and cinnamon.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Drunken Noodles.jpg")
+            div.mask
+                h2 Drunken Noodles
+                P Flat wide noodles, onions, green beans, basil leaves, hot peppers + your choice of chicken, beef, pork, tofu, or shrimp.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Frog Prince Roll.jpg")
+            div.mask
+                h2 Frog Prince Roll
+                P Pan-fried dumplings with powdered sugar and cinnamon.
+        div.row
+        hr
+        h1 Entrees
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Mango Fried Rice.jpg")
+            div.mask
+                h2 Mango Fried Rice
+                P Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Red Riding Hood Roll.jpg")
+            div.mask
+                h2 Red Riding Hood Roll
+                P Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Papa Chen's Veggies.jpg")
+            div.mask
+                h2 Papa Chen's Veggies
+                P Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Taipei Pork.jpg")
+            div.mask
+                h2 Taipei Pork
+                P Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Watatsumi Noodles.jpg")
+            div.mask
+                h2 Watatsumi Noodles
+                P Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Crispy Chicken Pad Thai.jpg")
+            div.mask
+                h2 Crispy Chicken Pad Thai
+                P Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Crispy Chicken Pad Thai.jpg")
+            div.mask
+                h2 Crispy Chicken Pad Thai
+                P Rice noodles with crispy chicken, egg, crushed peanuts, bean sprouts, lime + tamarind juices, coconut sugar.
+        div.row
+        hr
+        h1 Desserts
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Chicken.jpg")
+            div.mask
+                h2 Crispy Chicken
+                P Flat wide noodles, onions, green beans, basil leaves, hot peppers + your choice of chicken, beef, pork, tofu, or shrimp.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Beijing Pork.jpg")
+            div.mask
+                h2 Beijing Pork
+                P Pan-fried dumplings with powdered sugar and cinnamon.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Drunken Noodles.jpg")
+            div.mask
+                h2 Drunken Noodles
+                P Flat wide noodles, onions, green beans, basil leaves, hot peppers + your choice of chicken, beef, pork, tofu, or shrimp.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Frog Prince Roll.jpg")
+            div.mask
+                h2 Frog Prince Roll
+                P Pan-fried dumplings with powdered sugar and cinnamon.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Mango Fried Rice.jpg")
+            div.mask
+                h2 Mango Fried Rice
+                P Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries.
+        div.row
+        hr
+        h1 Drinks
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Red Riding Hood Roll.jpg")
+            div.mask
+                h2 Red Riding Hood Roll
+                P Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Papa Chen's Veggies.jpg")
+            div.mask
+                h2 Papa Chen's Veggies
+                P Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Taipei Pork.jpg")
+            div.mask
+                h2 Taipei Pork
+                P Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Watatsumi Noodles.jpg")
+            div.mask
+                h2 Watatsumi Noodles
+                P Chicken + shrimps + mango chunks wok-fried with jasmine rice, carrots, cabbages, egg, white onions, scallions, green + red peppers, Indian- curry powder + dried cranberries.
+        div.span3.view.view-first
+            img(src="/uploads/fullsize/Crispy Chicken Pad Thai.jpg")
+            div.mask
+                h2 Crispy Chicken Pad Thai
+                P Spicy tuna, shrimp tempura + cucumber ensconced in sushi rice + green soy paper, draped with pared scallop + strawberry medallions, topped with black tobiko + drizzled with red berry coulis, 10 pieces.
+        

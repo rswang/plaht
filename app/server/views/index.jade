@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    div#landing
+        div.span12#logo
+            h1 PLAHT
+            br
+            form(method="post").form-inline
+                input.form-control(placeholder="Zip code or restaurant name", type='text', name='search')#searchbar
+                button(type='submit').btn.btn-warning.btn-lg SEARCH
+        div.footer#footer
+            div.container.text-center#ftrctn
+                h4 HackPrinceton Spring 2014
+    div.navbar.navbar-fixed-top#index
+        div.navbar-inner
+            div.container-fluid
+            a(href='login')
+                button.btn-logout.btn.btn-warning#loginbtn RESTAURANT
+            a(href='userlogin')
+                button.btn-logout.btn.btn-warning#loginbtn USER
+                    //- i.icon-lock.icon-white
+     
+                //- button#btn-logout.btn.btn-warning
+                //-     //- i.icon-lock.icon-white
+                //-     | RESTAURANT

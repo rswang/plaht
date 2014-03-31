@@ -1,0 +1,48 @@
+
+
+// preset form values if we receive a userdata object //
+- user = typeof(udata) != 'undefined' ? udata : { }
+// store the userId on the client side in a hidden input field //
+input(type='hidden', value= user._id)#userId
+
+#users-form-container
+    form( method="post")#users-form.form-horizontal.well.span6
+        h1
+        p#sub1.subheading Please edit your profile.
+        hr
+        fieldset
+            #name-cg.control-group
+                label.control-label(for='name-tf') Name
+                .controls
+                    input#name-tf.input-xlarge(type='text', name='name', value= user.name)
+            #email-cg.control-group
+                label.control-label(for='email-tf') Email
+                .controls
+                    input#email-tf.input-xlarge(type='text', name='email', value= user.email)
+            #tags-cg.control-group
+                label.control-label(for='tags-tf') Preferences
+                .controls
+                    input#tags-tf.input-xlarge(type='text', name='tags', value= user.tags)
+            #allergies-cg.control-group
+                label.control-label(for='allergies-tf') Allergies
+                .controls
+                    input#allergies-tf.input-xlarge(type='text', name='allergies', value= user.allergies)
+            hr
+            p#sub2.subheading
+            #user-cg.control-group
+                label.control-label(for='user-tf') Username
+                .controls
+                    input#user-tf.input-xlarge.disabled(type='text', name='user', value= user.user)
+            #pass-cg.control-group
+                label.control-label(for='pass-tf') Password
+                .controls
+                    input#pass-tf.input-xlarge(type='password', name='pass', value='')
+            .form-actions
+                a(href='addrating')  
+                    button(type='button')#account-form-btn3.btn.btn-warning ADD RATING
+                button(type='button')#account-form-btn1.btn.btn-danger CANCEL
+                button(type='submit')#account-form-btn2.btn.btn-default UPDATE
+
+// display form errors in a custom modal window //
+
+include modals/form-errors
